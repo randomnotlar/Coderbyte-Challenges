@@ -5,8 +5,10 @@ A list of challenges in order:
 
 1- First Factorial
 
-2- First Reverse
+2- First Reverse ** I used "array.reduce(reducingFunction)" and "...array" operator for the first time.
 
 3- Letter Changes
 
 4- Simple Adding
+
+5- Letter Capitalize ** I used RegEx for the first time.
