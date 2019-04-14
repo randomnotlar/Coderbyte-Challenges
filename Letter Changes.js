@@ -1,5 +1,5 @@
-// This function changes every letter with its next one. C becomes D and Z becomes A. 
-// Then every lowercase vowel (a e i o u) in it becomes capitalized.
+// This function changes every letter within a string with its next letter. C becomes D and Z becomes A. 
+// Then every lowercase vowel (a e i o u) in new string becomes capitalized.
 
 function LetterChanges(str) {
     let reducingFunc = (accumulator, currentVal) => accumulator + capitalizeIfVowel(nextChar(currentVal));
