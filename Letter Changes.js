@@ -1,5 +1,13 @@
-function LetterChanges(str) {
+// This function changes every letter with its next one. C becomes D and Z becomes A. 
+// Then every lowercase vowel (a e i o u) in it becomes capitalized.
 
+function LetterChanges(str) {
+    let reducingFunc = (accumulator, currentVal) => accumulator + capitalizeIfVowel(nextChar(currentVal));
+    let result = [...str].reduce(reducingFunc, "");
+
+    return result;
+    
+    // Returns next letter in English alphabet
     function nextChar(c) {
         // 65 A 90 Z and 97 a 122 z
         // String.fromCharCode(65)
@@ -24,7 +32,8 @@ function LetterChanges(str) {
             return c;
         }
     }
-
+    
+    // Capitalizes lowercase vowels
     function capitalizeIfVowel(c) {
         if (c == "a" || c == "e" || c == "i" || c == "o" || c == "u") {
             let ascii = c.charCodeAt(0);
@@ -33,9 +42,4 @@ function LetterChanges(str) {
         }
         return c;
     }
-
-    let reducingFunc = (accumulator, currentVal) => accumulator + capitalizeIfVowel(nextChar(currentVal));
-    let result = [...str].reduce(reducingFunc, "");
-
-    return result;
 }
