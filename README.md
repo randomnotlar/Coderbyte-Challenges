@@ -16,3 +16,7 @@ A list of challenges in order:
 6- Simple Symbols ** It was painful. https://regexr.com/ is pretty useful.
 
 7- Check Nums
+
+8- Time Convert
+
+9- Alphabet Soup ** I used array.sort(func(a,b)) for the first time.
