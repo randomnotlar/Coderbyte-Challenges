@@ -20,3 +20,5 @@ A list of challenges in order:
 8- Time Convert
 
 9- Alphabet Soup ** I used array.sort(func(a,b)) for the first time.
+
+10- Kaprekars Constant
